@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  chromium:
+    dns:
+        - 8.8.8.8
+    build:
+      context: .
+      args:
+        - CHROMIUM_TAG=${CHROMIUM_TAG}
